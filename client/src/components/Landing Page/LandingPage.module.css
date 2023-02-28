@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+.titleContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerBtn{
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    left: 50%;
+    top: 50%
+}
+
+.btn{
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 20px; 
+}
+
+.spn{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.btn:hover .spn{
+    background: none;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+.img1{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-origin: red;
+}
+
+img2{
+    float: left;
+    margin-top: 50px;
+}
+
+
+h1{
+    font-family: 'Arvo', serif;
+    font-size: 80px; /* aumentar el tamaño de la fuente del título */
+    margin-top: 0;
+    margin-bottom: 50px; /* agregar un margen inferior para separar el título del botón */
+    width: 80%; /* ajustar el ancho del título */
+    text-align: center; /* centrar el título horizontalmente */
+}
+
+
+@media screen and (max-width: 1063px) {
+    .img1 {
+      display: none;
+    }
+    .img2 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    h1{
+        font-size: 50px;
+    }
+  }
+

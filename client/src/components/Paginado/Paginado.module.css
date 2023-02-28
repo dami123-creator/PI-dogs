@@ -1,0 +1,20 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn{
+        margin-right: 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        text-decoration: none;
+}

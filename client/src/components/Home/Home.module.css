@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  grid-template-columns: 1fr 2fr; /* establece dos columnas, una para el logo y otra para los filtros y botones */
+  grid-template-rows: auto; /* establece el tamaño de las filas automáticamente */
+  align-items: center
+
+}
+
+.logo {
+    width: 60px;
+    height: 70px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.envolve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Arvo', serif;
+
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Arvo', serif;
+
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    font-family: 'Arvo', serif;
+
+}
+
+.create {
+    margin-right: 15px;
+    background-color: #09f;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+
+}
+
+.reload {
+    background-color: #09f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    font-family: 'Arvo', serif;
+
+}
+
+.filt{
+    background-color: #09f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    font-family: 'Arvo', serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+}
+
+.position{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+      
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: -72px 0 #000000 inset;
+    }
+    100% {
+      box-shadow: 48px 0 #000000 inset;
+    }
+  }
+
+
+
+
+@media (max-width: 768px) { /* establece estilos específicos para pantallas con un ancho máximo de 768 píxeles */
+    .bar {
+      grid-template-columns: 1fr; /* establece una sola columna para todos los elementos */
+      grid-template-rows: auto auto; /* establece dos filas, una para el logo y otra para los filtros y botones */
+    }
+  
+    .logo {
+      width: 50%; /* establece el ancho del logo en un 50% del contenedor */
+    }
+  
+    .filters {
+      flex-direction: column; /* cambia la dirección de los elementos a una columna */
+    }
+  
+    .buttons {
+      flex-direction: column; /* cambia la dirección de los elementos a una columna */
+    }
+    .container{
+        margin-left: 50%;
+    }
+  }
