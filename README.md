@@ -22,6 +22,9 @@ Instalación
 Para instalar el proyecto en tu máquina local, sigue estos pasos:
 
 Clona el repositorio en tu máquina local.
+
 Navega a la carpeta raíz del proyecto y ejecuta npm install para instalar todas las dependencias.
+
 Crea un archivo .env en la carpeta raíz del proyecto y define las variables de entorno necesarias, como la URL de la base de datos, la clave API de TheDogApi, etc.
+
 Ejecuta npm run start para iniciar el servidor de desarrollo.
