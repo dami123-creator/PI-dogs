@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export function getDog() {
     return async function (dispatch) {
-        const response = await axios('http://localhost:3001/dogs');
+        const response = await axios('/dogs');
         return dispatch({
             type: GET_DOGS,
             payload: response.data
@@ -29,7 +29,7 @@ export function getByName(name){
 
 export function postDog(name) {
     return async function(dispatch){
-        const response = await axios.post(`http://localhost:3001/dogs`, name)
+        const response = await axios.post(`/dogs`, name)
         return dispatch({
             type: POST_DOG,
             response
@@ -39,7 +39,7 @@ export function postDog(name) {
 
 export function getTemps() {
     return async function(dispatch){
-        const response = await axios(`http://localhost:3001/temperament`)
+        const response = await axios(`/temperament`)
         return dispatch({
             type: GET_TEMPERAMENT,
             payload: response.data
@@ -49,7 +49,7 @@ export function getTemps() {
 
 export function getDetail(id){
     return async function(dispatch){
-        const response = await axios(`http://localhost:3001/dogs/${id}`)
+        const response = await axios(`/dogs/${id}`)
         return dispatch({
             type: DOGS_DETAIL,
             payload: response.data
