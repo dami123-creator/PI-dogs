@@ -50,3 +50,37 @@
     font-family: 'Arvo', serif;
 
 }
+
+
+@media (max-width: 850px) {
+    .pack{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        align-content: center;
+        height: 450px;
+        width: 70%;
+        flex-direction: column;
+        margin: 15px 0;
+        padding: 10px 10px;
+        justify-content: center;
+    }
+    .img{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
+        margin-top: 1px;
+        
+    }
+    .info{
+        font-size: 15px;
+        justify-content: center;
+        width: 50%;
+        height: 60%;
+        margin-left: 0;
+    }
+    
+    
+}

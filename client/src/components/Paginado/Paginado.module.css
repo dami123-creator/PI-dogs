@@ -18,3 +18,9 @@
         width: 25px;
         text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .btn{
+        margin-bottom: 5px;
+    }
+}

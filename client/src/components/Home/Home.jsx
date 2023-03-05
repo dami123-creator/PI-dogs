@@ -16,6 +16,8 @@ import s from './Home.module.css'
 import img from '../../assets/logo.png'
 import { AiOutlineReload } from 'react-icons/ai'
 import { MdOutlineCreate } from 'react-icons/md'
+import './style.css';
+import { AiOutlineMenu} from 'react-icons/ai'
 
 function Home () {
     const temperaments = useSelector(state => state.temperaments)
@@ -79,7 +81,11 @@ function Home () {
                 </div>
             ) : (
                 <div>
-            <div className={s.bar}>
+            <nav className={s.bar}>
+            <input type="checkbox" id="check" className={s.check}/>
+            <label htmlFor="check" className="checkbtn">
+            <i><AiOutlineMenu/></i>
+            </label>
                 <Link to='/'>
                     <div>
                         <img src={img} alt='logo' className={s.logo}/>
@@ -88,7 +94,7 @@ function Home () {
                     
                     <div className={s.envolve}> 
                     <div className={s.search}>
-                        <SearchBar />
+                        <SearchBar className={s.searbar}/>
                     </div>
                 <div className={s.filters}>
                 <select onChange={e => handleSort(e)} className={s.filt}>
@@ -128,7 +134,7 @@ function Home () {
                     </Link>
                 <button className={s.reload} onClick={e => handleClick(e)}> <AiOutlineReload/> </button>
                 </div>
-            </div>
+            </nav>
 
 
                 {/* <Paginado
@@ -162,11 +168,15 @@ function Home () {
                     })}
                 </div>
             </div>
+            <div className={s.paginado}>
+
             <Paginado
                 dogsPerPage={dogsPerPage}
                 allDogs={allDogs?.length}
                 paginado={paginado}
             />
+            </div>
+
             </div>
         </div>
             )

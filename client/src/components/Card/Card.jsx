@@ -4,7 +4,7 @@ import s from './Card.module.css'
 
 function Card({name, image, temperaments, weight}) {
     return(
-        
+        <div className={s.pack}> 
             <div className={s.container}>
                 <img src={image} alt="not found" width='250px' height='250px' className={s.img} />
                 <div className={s.info}> 
@@ -14,7 +14,7 @@ function Card({name, image, temperaments, weight}) {
                     <button className={s.boton}>Get Detail!</button>
                 </div>
             </div>  
-        
+        </div>
     )
 }
 
