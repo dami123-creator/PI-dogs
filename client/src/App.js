@@ -6,7 +6,7 @@ import CreateDog from './components/createDog/CreateDog'
 import Home from './components/Home/Home';
 import Detail from './components/Detail/Detail'
 import axios from 'axios';
-axios.defaults.baseURL = 'https://pi-dogs-production-03ed.up.railway.app/';
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
   return (
